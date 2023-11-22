@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@-ms-viewport {
+  width: device-width;
+}
+
+:root {
+  --background: #242424;
+  --surface: #3d3d3d;
+  --text: #fafafa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.content {
+  background: var(--background);
+  color: var(--text);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 12px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.description {
+  margin: 12px auto;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  display: flex;
+  background-color: transparent;
+  color: var(--text);
+  margin: 0px 6px;
+  padding: 8px;
+  border-radius: 99px;
+  transition: all 0.2s;
+}
+
+.icon-button:hover {
+  background-color: var(--surface);
+  box-shadow: 0 0 4px 0px var(--surface);
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
